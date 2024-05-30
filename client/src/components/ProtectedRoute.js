@@ -168,8 +168,10 @@ function ProtectedRoute({ children }) {
               ></i>
             )}
             <h1 className="text-2xl text-white">QUIZ Application</h1>
-            <div>
-              <PiStudentBold className=""/>
+            <div className="border-white rounded-full">
+              <div className="text-4xl text-center ">
+                <PiStudentBold />
+              </div>
 
               <div className="flex gap-1 items-center">
                 <h1 className="text-md text-white">{user?.name}</h1>

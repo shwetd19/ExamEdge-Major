@@ -32,13 +32,13 @@ function Home() {
 
   return (
     user && (
-      <div >
-        <PageTitle  title={`Hi ${user.name}, Welcome to Quiz Application`} />
+      <div>
+        <PageTitle title={`Hi ${user.name}, Welcome to Quiz Application`} />
         <div className="divider"></div>
         <Row gutter={[16, 16]}>
           {exams.map((exam) => (
             <Col span={6}>
-              <div className="card-lg flex flex-col gap-1 p-2">
+              <div className="card-lg flex flex-col gap-1 p-2 rounded-lg">
                 <h1 className="text-2xl">{exam?.name}</h1>
 
                 <h1 className="text-md">Category : {exam.category}</h1>
@@ -48,7 +48,7 @@ function Home() {
                 <h1 className="text-md">Duration : {exam.duration}</h1>
 
                 <button
-                  className="primary-outlined-btn"
+                  className="primary-outlined-btn rounded-md"
                   onClick={async () => {
                     // Request camera and microphone permissions
                     try {
