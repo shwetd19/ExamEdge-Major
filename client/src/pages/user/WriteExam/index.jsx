@@ -278,7 +278,7 @@ function WriteExam() {
                 return (
                   <div
                     className={`
-                  flex flex-col gap-1 p-2 ${
+                  flex flex-col gap-1 p-2 bg-white ${
                     isCorrect ? "bg-success" : "bg-error"
                   }
                 `}
